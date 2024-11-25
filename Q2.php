@@ -3,7 +3,7 @@
 	
 	try{
 		require_once('../pdo_connect.php'); //Connect to the database
-		$sql = 'SELECT u.username, r.city, r.state, r.country, b.title JOIN users u ON ur.username = u.username JOIN region r ON u.regionID = r.regionID JOIN book b ON ur.bookID = b.bookID ORDER BY r.country';
+		$sql = 'SELECT u.username, r.city, r.state, r.country, b.title FROM userReads ur JOIN users u ON ur.username = u.username JOIN region r ON u.regionID = r.regionID JOIN book b ON ur.bookID = b.bookID ORDER BY r.country';
 		$result = $dbc-> query($sql);
 	} catch (PDOException $e){
 		echo $e->getMessage();

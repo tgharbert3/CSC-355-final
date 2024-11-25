@@ -31,11 +31,11 @@ try {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Books by the Same Author</title>
+    <title>Library</title>
     <meta charset="utf-8">
 </head>
 <body>
-    <h2>Books by the Same Author (self-join)</h2>
+    <h2>Books By The Same Author (Self-Join)</h2>
 
     <table border="1">
         <tr>

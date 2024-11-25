@@ -51,7 +51,7 @@ WHERE
 	<meta charset ="utf-8"> 
 </head>
 <body>
-	<h2>Books with the Most Reviews (subquery)</h2>
+	<h2>Books With The Highest Number Of Reviews (Subquery)</h2>
 
 	<table border="1">
 		<tr>

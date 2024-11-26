@@ -3,7 +3,9 @@
 	
 	try{
 		require_once('../pdo_connect.php'); //Connect to the database
-		$sql = 'SELECT b.title, AVG(ur.rating) AS average_rating FROM book b JOIN userReviews ur ON b.bookID = ur.bookID GROUP BY b.title';
+		$sql = 'SELECT b.bookID, b.title, GetAverageRating(b.bookID) AS average_rating 
+        FROM book b 
+        GROUP BY b.bookID, b.title';
 		$result = $dbc-> query($sql);
 	} catch (PDOException $e){
 		echo $e->getMessage();
@@ -16,7 +18,7 @@
 	<meta charset ="utf-8"> 
 </head>
 <body>
-	<h2>Average Ratings</h2>
+	<h2>Average Ratings (Stored Function)</h2>
 
 	<table>
 		<tr>

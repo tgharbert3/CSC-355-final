@@ -16,7 +16,7 @@
 	<meta charset ="utf-8"> 
 </head>
 <body>
-	<h2>Average Ratings</h2>
+	<h2>Average Ratings (Aggregate Function)</h2>
 
 	<table>
 		<tr>

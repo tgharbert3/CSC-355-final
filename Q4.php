@@ -16,7 +16,7 @@
 	<meta charset ="utf-8"> 
 </head>
 <body>
-	<h2>Total Reviews</h2>
+	<h2>Total Reviews(Aggregate Function Using Group By And Having)</h2>
 
 	<table>
 		<tr>

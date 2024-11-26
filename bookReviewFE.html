@@ -1,23 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Review App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            text-align: center;
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+
+        ol {
+            margin: 20px auto;
+            padding: 0;
+            max-width: 800px;
+            list-style-type: none;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        li a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1.1em;
+        }
+
+        li a:hover {
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Book Review App</h1>
-    <ol>
-        <li><a href="query1.php">Books that the User has reviewed and their rating</a></li>
-        <li><a href="query2.php">Users their regions and the book they have read, sorted by country</a></li>
-        <li><a href="query3.php">Average Book ratings, sorted by title</a></li>
-        <li><a href="query4.php">Books with more than one review</a></li>
-        <li><a href="query5.php"></a></li>
-        <li><a href="query6.php"></a></li>
-        <li><a href="query7.php"></a></li>
-        <li><a href="query8.php"></a></li>
-        <li><a href="query9.php"></a></li>
-        <li><a href="query10.php"></a></li>
-    </ol>
+    <header>
+        <h1>Book Review App</h1>
+    </header>
+    <main>
+        <h2>Queries</h2>
+        <ol>
+            <li><a href="Q1.php">Books That The User Has Reviewed And Their Rating (2 Table Join)</a></li>
+            <li><a href="Q2.php">Users, Their Regions, And The Book They Have Read, Sorted By Country (3 Table Join)</a>
+            </li>
+            <li><a href="Q3.php">Average Book Ratings, Sorted By Title (Aggregate Function)</a></li>
+            <li><a href="Q4.php">Books With More Than One Review(Aggregate Function Using Group By And Having)</a></li>
+            <li><a href="Q5.php">Books With The Highest Number Of Reviews (Subquery)</a></li>
+            <li><a href="Q6.php">A Text-Based Book Title Search Query (Using LIKE With Wildcards)</a></li>
+            <li><a href="Q7.php">Books By The Same Author (Self-Join)</a></li>
+            <li><a href="Q8.php">Book Reviews By User (Stored Procedure)</a></li>
+            <li><a href="Q9.php">Users Average Rating (Stored Function)</a></li>
+            <li><a href="Q10.php">Most Reviewed Genre</a></li>
+        </ol>
+    </main>
+    <footer>
+        <p>Pine Gragg, Tyler Harbert, Rachel Keiter, Sabella Malisher</p>
+    </footer>
 </body>
+
 </html>
